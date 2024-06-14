@@ -15,3 +15,7 @@ header {
 form div {
     margin: 12px 0;
 }
+
+tbody a {
+    margin: 0 6px;
+}
