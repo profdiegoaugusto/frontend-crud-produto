@@ -1,4 +1,5 @@
 import { ProdutoService } from "../../../services/produto-service.js";
+import { formatarMoeda } from "../../../utils/formatador.js";
 
 let totalProdutos = 0;
 
@@ -28,7 +29,7 @@ function preencherTabela(produtos) {
             produtos[i].id,
             produtos[i].nome,
             produtos[i].categoria,
-            produtos[i].preco
+            formatarMoeda(produtos[i].preco)
         ]
 
         for (let j = 0; j < celulas.length; j++) {
